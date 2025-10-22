@@ -244,3 +244,74 @@ section{
     height: 2px;
     background-color: var(--title-color);
 }
+
+.faq {
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.faq .faq-text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 70%;
+    text-align: center;
+}
+
+.faq .faq-title{
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--title-color);
+    text-transform: uppercase;
+}
+
+.faq .faq-description{
+    font-size: 8px;
+    line-height: 1.2;
+}
+
+.faq .faq-questions{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.faq .faq-questions .question-card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.faq .faq-questions .question-card .question{
+    position: relative;
+    padding: 8px 12px;
+    background-color: var(--bg-tertiary-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.faq .faq-questions .question-card .question .question-title{
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.faq .faq-questions .question-card .question .arrow{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    font-size: 8px;
+    transform: translateY(-50%);
+}
+
+.faq .faq-questions .question-card .question-answer{
+    font-size: 8px;
+    line-height: 1.1;
+    color: #000;
+    background-color: var(--bg-fourth-color);
+    border-radius: 4px;
+    padding: 8px 12px;
+}
