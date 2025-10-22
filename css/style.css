@@ -27,11 +27,12 @@ body{
     background-color: var(--bg-color);
     background-image: var(--bg-texture);
     color: var(--primary-color);
-    padding: 1vh 1vh;
+    padding-top: 1vh;
 }
 
 header{
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
     height: 5vh;
     display: flex;
     justify-content: space-between;
