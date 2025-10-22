@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #E2A231;
+  --light-color: #f4f4f6;
+  --secondary-color:#3b3c41;
+  --dark-color: #111;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--light-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+li {
+    list-style: none;
+    margin-right: 20px;
+}
+h1{
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    margin: 30px 0;
+}
+p{
+    font-size: clamp(0.7rem, 2.5vw, 1rem);
+    margin: 30px 0;
+    line-height: 1.7;
+    /* color: #ccc; */
+}
+h2{
+    font-size: clamp(1.5rem, 3vw, 2.3rem);
+    margin: 30px 0;
+}
+h3{
+    font-size: clamp(1.3rem, 2.7vw, 1.9rem);
+    margin: 30px 0;
+}
+
+
+/* utilities------------ */
+.container{
+    width: min(90%, 1300px);
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
+}
+.section-title{
+    text-align: center;
+    color: var(--primary-color);
+}
+.bar{
+    width: 250px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 20px auto;
+    position: relative;
+    border-radius: 23px;
+}
+.bar::after{
+    content: '';
+    position: absolute;
+     border-radius: 23px;
+    top: 10px;
+    width: 70px;
+    right: 0;
+    height: 4px;
+    background-color: var(--primary-color);
+}
+.bar::before{
+    content: '';
+    position: absolute;
+     border-radius: 23px;
+    bottom: 10px;
+    width: 70px;
+    left: 0;
+    height: 4px;
+    background-color: var(--primary-color);
+}
+
+/* inclusion section------------ */
+.hero-section{
+    padding: 60px;
+}
+.hero-section .hero-content{
+    margin-top: 100px;
+}
+/* stats-section---------- */
+.stats-cards{
+    margin: 40px 0;
+}
+.stats-card{
+    /* max-width: 370px; */
+    justify-self: center;
+    border: 2px solid var(--dark-color);
+    padding: 22px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    box-shadow: 0 10px 0 var(--primary-color);
+}
+
+
+@media (max-width:678px) {
+ .hero-section{
+    padding: 20px;
+}   
+}
+
