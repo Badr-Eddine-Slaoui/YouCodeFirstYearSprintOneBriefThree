@@ -582,3 +582,350 @@ footer .copyright{
     font-size: 6px;
     font-weight: bold;
 }
+
+@media screen and (min-width: 413px) {
+    main{
+        padding-bottom: 10vh;
+    }
+
+    section {
+        height: 100vh;
+    }
+
+    .hero {
+        gap: 4rem;
+    }
+
+    .hero .hero-text{
+        width: 40%;
+        gap: 3rem;
+    }
+
+    .hero .hero-text .hero-title {
+        font-size: 5rem;
+    }
+
+    .hero .hero-text .hero-description {
+        font-size: 2rem;
+    }
+
+    .hero .hero-text .hero-btn{
+        width: 35%;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        border-radius: 16px;
+    }
+
+    .hero .hero-image{
+        width: 30%;
+    }
+
+    .seperator {
+        gap: 1rem;
+    }
+
+    .seperator .line-1,
+    .seperator .line-2,
+    .seperator .line-3 {
+        height: .5rem;
+    }
+
+    .definition {
+        height: 80vh;
+        gap: 4rem;
+    }
+
+    .definition .definition-img{
+        width: 35%;
+    }
+
+    .definition .definition-text{
+        width: 40%;
+        gap: 2rem;
+    }
+
+    .definition .definition-text .definition-title {
+        font-size: 3rem;
+    }
+
+    .definition .definition-text .definition-description {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .advantage {
+        height: 150vh;
+        gap: 8rem;
+    }
+
+    .advantage .advantage-text{
+        width: 40%;
+        gap: 2rem;
+    }
+
+    .advantage .advantage-title {
+        font-size: 3rem;
+    }
+
+    .advantage .advantage-description {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .advantage .advantage-graph{
+        width: 60%;
+        height: 90vh;
+    }
+
+    .advantage .advantage-graph .center{
+        width: 10px;
+        height: 100%;
+    }
+
+    .advantage .advantage-graph .center .top-img{
+        position: absolute;
+        top: -5.5vh;
+        left: -2.5vh;
+        width: 6vh;
+        height: 6vh;
+    }
+
+    .advantage .advantage-graph .center .bottom-img{
+        position: absolute;
+        bottom: -5.5vh;
+        left: -2.5vh;
+        width: 6vh;
+        height: 6vh;
+    }
+
+    .advantage .advantage-graph .row{
+        width: 100%;
+        height: 45%;
+    }
+
+    .advantage .advantage-graph .row .card{
+        width: 80%;
+        height: 80%;
+        gap: 1rem;
+        padding: 0 .6rem;
+        border: 2px solid var(--title-color);
+        border-radius: 24px;
+    }
+
+    .advantage .advantage-graph .left-side .row .card{
+        height: 70%;
+    }
+
+    .advantage .advantage-graph .row .card .card-title{
+        font-size: 1.8rem;
+    }
+
+    .advantage .advantage-graph .row .card .card-description{
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+
+    .advantage .advantage-graph .row .line-container{
+        width: 45%;
+        height: 10px;
+    }
+
+    .advantage .advantage-graph .row .line-container .vertical-line{
+        height: 100%;
+    }
+
+    .faq {
+        height: 130vh;
+        gap: 4rem;
+    }
+
+    .faq .faq-text{
+        width: 40%;
+        gap: 2rem;
+    }
+
+    .faq .faq-title {
+        font-size: 3rem;
+    }
+
+    .faq .faq-description {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .faq .faq-questions{
+        width: 60%;
+        gap: 2rem;
+    }
+
+    .faq .faq-questions .question-card .question{
+        padding: 1.5rem 2rem;
+        border-radius: 16px;
+    }
+
+    .faq .faq-questions .question-card .question .question-title {
+        font-size: 1.5rem;
+    }
+
+    .faq .faq-questions .question-card .question .arrow{
+        font-size: 1.5rem;
+    }
+
+    .faq .faq-questions .question-card .question-answer {
+        height: 15vh;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        border-radius: 16px;
+        padding: 1rem 1.5rem;
+    }
+
+    .newsletter {
+        height: 70vh;
+        gap: 4rem;
+    }
+
+    .newsletter .newsletter-text{
+        width: 40%;
+        gap: 2rem;
+    }
+
+    .newsletter .newsletter-title {
+        font-size: 3rem;
+    }
+
+    .newsletter .newsletter-description {
+        width: 60%;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .newsletter .newsletter-form{
+        width: 60%;
+        height: 8vh;
+        gap: 2rem;
+    }
+
+    .newsletter .newsletter-form .newsletter-input{
+        padding: 1rem 1.5rem;
+        border-radius: 16px;
+        font-size: 1.5rem;
+    }
+
+    .newsletter .newsletter-form .newsletter-btn{
+        padding: 1rem 1.5rem;
+        border-radius: 16px;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        height: 100vh;
+        gap: 3rem;
+    }
+
+    footer .row{
+        height: 85%;
+        gap: 10rem;
+    }
+
+    footer .footer-content{
+        width: 40%;
+        gap: 4rem;
+    }
+
+    footer .footer-content .logo-container{
+        gap: 8px;
+    }
+
+    footer .footer-content .logo-container img{
+        width: 6vh;
+        height: 6vh;
+    }
+
+    footer .footer-content .logo-container .logo-text{
+        font-size: 1.5rem;
+    }
+
+    footer .footer-content .pages,
+    footer .footer-content .links{
+        gap: 4rem;
+    }
+
+    footer .footer-content .pages .pages-title,
+    footer .footer-content .links .links-title{
+        font-size: 1.5rem;
+    }
+
+    footer .footer-content .pages .row,
+    footer .footer-content .links .row{
+        gap: 4rem;
+    }
+
+    footer .footer-content .pages .row .col,
+    footer .footer-content .links .row .col{
+        gap: 2rem;
+    }
+
+    footer .footer-content .pages .row .col .footer-link,
+    footer .footer-content .links .row .col .footer-link{
+        font-size: 1.2rem;
+    }
+
+    footer .footer-content .partners{
+        height: 6vh;
+        gap: 4rem;
+    }
+
+    footer .footer-content .partners .partner-container{
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    footer .footer-content .partners .partner-container img{
+        width: 80%;
+    }
+
+    footer .contact-form{
+        width: 30%;
+        height: 80%;
+        gap: 2rem;
+        border-radius: 16px;
+    }
+
+    footer .contact-form .contact-title{
+        font-size: 1.5rem;
+    }
+
+    footer .contact-form .form-row{
+        gap: 2rem;
+    }
+
+    footer .contact-form .form-row label{
+        font-size: 1.2rem;
+    }
+
+    footer .contact-form .form-row .contact-input{
+        padding: 1rem 1.5rem;
+        border-radius: 16px;
+        font-size: 1.2rem;
+    }
+
+    footer .contact-form .form-row .contact-textarea{
+        padding: 1rem 1.5rem;
+        border-radius: 16px;
+        font-size: 1.2rem;
+        height: 10vh;
+    }
+
+    footer .contact-form .form-row .contact-btn{
+        width: 33%;
+        height: 5vh;
+        font-size: 1.2rem;
+        border-radius: 16px;
+    }
+
+    footer .copyright{
+        height: 5vh;
+        font-size: 1.2rem;
+    }
+
+}
