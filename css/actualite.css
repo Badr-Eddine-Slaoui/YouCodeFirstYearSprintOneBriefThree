@@ -1,6 +1,6 @@
 :root{
     --bg-color--titre:#E2A231;
-    
+    --card-bg-color:#B1BACB;
     --font-family: 'Poppins', sans-serif;
 }
 *{
@@ -59,88 +59,7 @@ select#theme option {
     border-radius: 5px;
     
 }
-/*section article*/
-/* .articles{
-    margin-top: 10px;
-    display:flex;
-   grid-column: 1/5;
-   grid-row: 2/8;
-   display: flex;
-    flex-direction: column; 
-    justify-content: space-between;
-   
 
- }
-
-
-
-.art1 img{  
-  
-    width: 90%;
-    height: 50%;
-      border-radius: 10px;
-    
-}
-.art1 {
-   top:100px;
-    margin-left:20px ;
-   
-     position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-}
- .art2 img ,.art3 img{
-    margin-left:20px ;
-          width: 89%;
-    height: 83%;
-      border-radius: 10px;
-}
- .art2 , .art3{
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-    }
-    .art4{
-    margin-top:1px;
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-    }
-
- .art5 , .art6{
-    margin-top:40px;
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-    }
-.art4 img , .art5 img ,.art6 img{
-    margin-left:20px ;
-      width: 90%;
-      height: 100%;
-      border-radius: 10px;
-}
-.art1 h3{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-    z-index: 2;
-    font-family: var(--font-family);
-}
-.articles_item h3 {
-    position: absolute;
-    bottom: 150px;
-    left: 10px;
-    color: white;
-    z-index: 2;
-    font-family: var(--font-family);
-}
-
- */
  .articles {
   grid-column: 1 / 5;
   grid-row: 2 / 8;
@@ -190,3 +109,94 @@ select#theme option {
   font-family: var(--font-family);
   font-size: 2rem;
 }
+
+
+.Dateprojet{
+        grid-column: 1 / 4;
+        grid-row: 8/ 10;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);       
+        grid-template-rows: repeat(4, 1fr); 
+        gap: 20px;
+        padding: 10px; 
+       position:relative;
+       left:45px;
+
+}
+.Dateprojet__titre{
+     grid-column: 1 / 4;
+    grid-row: 1/ 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Dateprojet__titre h1{
+    color:var(--bg-color--titre);
+    text-align: center;
+
+}
+.Dateprojet__card{
+    display:flex;
+   
+    
+border-radius: 35px;
+background-color:var( --card-bg-color);
+  width: 100%;
+  height: 100%;
+
+}
+.card1{
+     grid-column: 1/ 4;
+    grid-row: 2/3;
+
+}
+.card2{
+    grid-column: 1/ 4;
+    grid-row: 3/4;
+
+}
+.card3{
+     grid-column: 1/ 4;
+    grid-row: 4/5;
+
+}
+.line{
+    border-left: 2px solid black;
+      height: 100%;
+      position:relative;
+      left: 10px
+
+}
+.date{
+    position:relative;
+    top:40px;
+    color:#242D59;
+}
+.txt{
+  
+    position :relative;
+    left: 10px;
+}
+.txt h2{
+     padding-left: 5px ;
+      font-family:var( --font-family);
+      
+  
+    color:#242D59
+}
+.txt p{
+    padding-left: 5px ;
+    position:relative;
+    bottom:3px;
+    color: white;
+    
+    font-family:var( --font-family);
+    font-weight: bold;
+
+
+}
+
+
+
