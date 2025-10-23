@@ -1,17 +1,3 @@
-
- :root {
-  --bg-color--titre: #E2A231;
-  --card-bg-color: #B1BACB;
-  --font-family: 'Poppins', sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 .seperator{
    grid-column: 1 / 5;
 }
@@ -36,7 +22,7 @@ main {
 }
 
 .hero h1 {
-  color: var(--bg-color--titre);
+  color: var(--title-color);
   text-align: center;
    margin-bottom: 10px;
 }
@@ -123,14 +109,14 @@ select#mois option, select#année option, select#theme option {
 }
 
 .Dateprojet__titre h1 {
-  color: var(--bg-color--titre);
+  color: var(--title-color);
   text-align: center;
 }
 
 .Dateprojet__card {
   display: flex;
   align-items: center;
-  background-color: var(--card-bg-color);
+  background-color: var( --bg-fourth-color);
   border-radius: 40px;
   padding: 25px;
   width: content;
@@ -171,7 +157,7 @@ select#mois option, select#année option, select#theme option {
 }
 
 .video__titre h1 {
-  color: var(--bg-color--titre);
+  color: var(--title-color);
   text-align: center;
 }
 .video__txt{
@@ -204,7 +190,7 @@ main {
 }
 
 .hero h1 {
-  color: var(--bg-color--titre);
+  color: var(--title-color);
   text-align: center;
   font-size: 80px;
   margin-bottom: 10px;
@@ -299,7 +285,7 @@ select#mois option, select#année option, select#theme option {
 }
 
 .Dateprojet__titre h1 {
-  color: var(--bg-color--titre);
+  color: var(--title-color);
   text-align: center;
   font-size:40px;
 }
@@ -307,7 +293,7 @@ select#mois option, select#année option, select#theme option {
 .Dateprojet__card {
   display: flex;
   align-items: center;
-  background-color: var(--card-bg-color);
+  background-color: var(--bg-fourth-color);
   border-radius: 40px;
   padding: 20px;
   width: 90%;
@@ -353,7 +339,7 @@ select#mois option, select#année option, select#theme option {
 }
 
 .video__titre h1 {
-  color: var(--bg-color--titre);
+  color: var(--title-color);
   text-align: center;
    font-size:40px;
    margin-bottom:20px;
