@@ -1,0 +1,378 @@
+
+ :root {
+  --bg-color--titre: #E2A231;
+  --card-bg-color: #B1BACB;
+  --font-family: 'Poppins', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* MAIN GRID STRUCTURE */
+main {
+  padding: 1vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto auto;
+  row-gap: 30px;
+}
+
+/* HERO */
+.hero {
+  grid-column: 1 / 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.hero h1 {
+  color: var(--bg-color--titre);
+  text-align: center;
+   margin-bottom: 10px;
+}
+select#mois option, select#année option, select#theme option { 
+    text-align: center; 
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu__item {
+  border-radius: 10px;
+  color: #E2A231;
+  font-family: var(--font-family);
+  height: 30px;
+  width: 20%;
+}
+
+.menu__item--actif {
+  background-color: #E2A231;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* ARTICLES */
+.articles {
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
+.articles__item {
+  position: relative;
+  left:20px;
+  right:20px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 85%;
+  height: 100%;
+}
+
+.articles__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.articles__item h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-family: var(--font-family);
+   font-size: 2rem
+
+}
+
+/* DATE PROJET */
+.Dateprojet {
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 20px;
+  padding: 10px;
+  justify-items: center;
+}
+
+.Dateprojet__titre h1 {
+  color: var(--bg-color--titre);
+  text-align: center;
+}
+
+.Dateprojet__card {
+  display: flex;
+  align-items: center;
+  background-color: var(--card-bg-color);
+  border-radius: 40px;
+  padding: 25px;
+  width: content;
+}
+
+.date {
+  color: #242D59;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+}
+
+.Dateprojet__card__line{
+  border-left: 2px solid black;
+  height: 100%;
+  margin: 0 20px;
+}
+
+.txt h2 {
+  font-family: var(--font-family);
+  color: #242D59;
+}
+
+.txt p {
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: white;
+}
+
+/* VIDEO */
+.video {
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+.video__titre h1 {
+  color: var(--bg-color--titre);
+  text-align: center;
+}
+.video__txt{
+    text-align: center;
+    font-weight: bold;
+}
+.video__item  iframe {
+  border-radius: 20px;
+  width: 100%;
+  height: 270px;
+}
+
+@media screen and (min-width: 413px) {
+    /* MAIN GRID STRUCTURE */
+main {
+  padding: 1vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto auto;
+  row-gap: 30px;
+}
+
+/* HERO */
+.hero {
+  grid-column: 1 / 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.hero h1 {
+  color: var(--bg-color--titre);
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 10px;
+}
+select#mois option, select#année option, select#theme option { 
+    text-align: center; 
+
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.menu__item {
+  border-radius: 10px;
+  color: #E2A231;
+  font-family: var(--font-family);
+  height: 50px;
+  width: 20%;
+  font-size:20px;
+}
+
+.menu__item--actif {
+  background-color: #E2A231;
+  color: #fff;
+  border-radius: 5px;
+  font-size:20px;
+}
+
+/* ARTICLES */
+.articles {
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns:repeat(3,1fr) ;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  padding: 10px;
+  margin-top: 60px;
+}
+
+.articles_item {
+  position: relative;
+  left:20px;
+  right:20px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 85%;
+  height: 100%;
+}
+
+.articles_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.articles_item h3 {
+  position: absolute;
+  bottom: 100000000px;
+  left: 20px;
+  color: white;
+  font-family: var(--font-family);
+   font-size: 3rem;
+   
+
+}
+
+/* DATE PROJET */
+.Dateprojet {
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: 900px;
+  grid-template-rows: repeat(4, auto);
+  gap: 30px;
+  padding: 10px;
+ 
+  justify-items: center;
+  justify-content: center;
+}
+
+.Dateprojet__titre h1 {
+  color: var(--bg-color--titre);
+  text-align: center;
+  font-size:40px;
+}
+
+.Dateprojet__card {
+  display: flex;
+  align-items: center;
+  background-color: var(--card-bg-color);
+  border-radius: 40px;
+  padding: 20px;
+  width: 90%;
+}
+
+.date {
+  color: #242D59;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+  font-size:20px;
+}
+
+.line {
+  border-left: 2px solid black;
+  height: 100%;
+  margin: 0 20px;
+}
+
+.txt h2 {
+  font-family: var(--font-family);
+  color: #242D59;
+   font-size: 30px;
+}
+
+.txt p {
+  font-family: var(--font-family);
+  font-weight: bold;
+  color: white;
+  font-size: 23px;
+}
+
+/* VIDEO */
+.video {
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 10px;
+  
+  
+}
+
+.video__titre h1 {
+  color: var(--bg-color--titre);
+  text-align: center;
+   font-size:40px;
+}
+.video__txt{
+    text-align: center;
+    font-weight: bold;
+}
+.video__item{
+    display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.video__item  iframe {
+  border-radius: 20px;
+  width: 40%;
+  height: 400px;
+  position:relative;
+  left:10px;
+  right:10px;
+
+  
+}
+
+
+
+}
