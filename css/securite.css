@@ -1,0 +1,127 @@
+
+  h1.confidentialité  {
+  color:#E2A231 ;
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em; ;
+  
+}
+.sub-confidentialité{
+    justify-self: center;
+    justify-content: space-around;
+    font-size: 10px;
+    width: 80%;
+    padding-bottom: 20px;
+
+}
+.box-1 , .box-2 , .box-3 , .box-4 , .box-5 , .box-6{
+    width: 75%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    border: #E2A231 solid 2px;
+    background-color: #3A4757;
+    border-radius: 20px;
+    justify-self:center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 5px #E2A231;
+}
+.container-of-the-boxs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    gap:16px;
+}
+.icons,.titre-de-box,.p-de-box{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titre-de-box{
+    color: #E2A231;
+}
+.p-de-box{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+img.screen-shots{
+    width: 70%;
+    border: #E2A231 solid 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-self: center;
+    box-shadow: 0 4px #E2A231;
+}
+.confirmation{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+.box-7{
+    display: flex;
+    justify-items: center;
+    border: #E2A231 solid 2px;
+    background-color: #3A4757;
+     width: 90%; 
+    border-radius: 10px;
+    font-size: smaller;
+    box-shadow: 0 2.5px #E2A231;
+}
+h6.lien-pdf{
+    justify-self: center;
+    color: #E2A231;
+    
+}
+button.lien-btn{
+    background-color: #E2A231;
+    text-decoration: none;
+    border: #3A4757 solid 1.5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+button.lien-btn:hover{
+    color: #E2A231;
+    background-color: aliceblue;
+}
+p.text-de-box{
+    font-size: 13px;
+}
+div.box-8{
+    margin: 20px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 160px;
+    border: #E2A231 solid 2px;
+    background-color: #3A4757;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0px 5px #E2A231;
+}
+.sub2-confidentialité{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:8px;
+}
+ img.twitter{
+    width: 80%;
+    border: #E2A231  solid 2px;
+    display: flex;
+    justify-self:center;
+    border-radius: 20px;
+    margin: 20px;
+ }
