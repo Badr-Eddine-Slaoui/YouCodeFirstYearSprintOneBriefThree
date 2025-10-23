@@ -10,34 +10,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-.seperator {
-    width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
 
-.seperator .line-1,
-.seperator .line-2,
-.seperator .line-3{
-    height: 2px;
-    border-radius: 50px;
-    background-color: var(--title-color);
-}
 
-.seperator .line-1{
-    width: 33%;
-}
 
-.seperator .line-2{
-    width: 100%;
-}
-
-.seperator .line-3{
-    width: 33%;
-    margin-left: auto;
-}
 /* MAIN GRID STRUCTURE */
 main {
   padding: 1vh;
@@ -59,6 +34,9 @@ main {
 .hero h1 {
   color: var(--bg-color--titre);
   text-align: center;
+}
+select#mois option, select#année option, select#theme option { 
+    text-align: center; 
 }
 
 .menu {
@@ -91,7 +69,7 @@ main {
   padding: 10px;
 }
 
-.articles_item {
+.articles__item {
   position: relative;
   left:20px;
   right:20px;
@@ -101,7 +79,7 @@ main {
   height: 100%;
 }
 
-.articles_item img {
+.articles__item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -118,7 +96,7 @@ main {
   border-radius: 10px;
 }
 
-.articles_item h3 {
+.articles__item h3 {
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -160,7 +138,7 @@ main {
   width: 100px;
 }
 
-.line {
+.Dateprojet__card__line{
   border-left: 2px solid black;
   height: 100%;
   margin: 0 20px;
@@ -191,7 +169,7 @@ main {
   color: var(--bg-color--titre);
   text-align: center;
 }
-.txt_video{
+.video__txt{
     text-align: center;
 }
 .video__item  iframe {
