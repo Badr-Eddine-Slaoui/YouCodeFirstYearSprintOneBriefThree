@@ -113,6 +113,35 @@ header nav .nav-button a{
     text-shadow: 0 0 10px #000000bf;
 }
 
+.seperator {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.seperator .line-1,
+.seperator .line-2,
+.seperator .line-3{
+    height: 2px;
+    border-radius: 50px;
+    background-color: var(--title-color);
+}
+
+.seperator .line-1{
+    width: 33%;
+}
+
+.seperator .line-2{
+    width: 100%;
+}
+
+.seperator .line-3{
+    width: 33%;
+    margin-left: auto;
+}
+
 footer {
     height: 30vh;
     display: flex;
@@ -347,6 +376,16 @@ footer .copyright{
 
     header nav .nav-button a{
         font-size: 20px;
+    }
+
+    .seperator {
+        gap: 1rem;
+    }
+
+    .seperator .line-1,
+    .seperator .line-2,
+    .seperator .line-3 {
+        height: .5rem;
     }
 
     footer {
