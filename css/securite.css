@@ -1,3 +1,7 @@
+:root{
+    
+    --bg-texture: url('../images/texture.png');
+}
 
   h1.confidentialité  {
   color:#E2A231 ;
@@ -23,7 +27,7 @@
     display: flex;
     flex-direction: column;
     border: #E2A231 solid 2px;
-    background-color: #3A4757;
+    background-image: var(--bg-texture);
     border-radius: 20px;
     justify-self:center;
     align-items: center;
@@ -111,7 +115,7 @@ div.box-8{
     padding: 10px;
     box-shadow: 0px 5px #E2A231;
 }
-.sub2-confidentialité{
+.sub2-confidentialité,.sub3-confidentialité {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,3 +129,151 @@ div.box-8{
     border-radius: 20px;
     margin: 20px;
  }
+  @media only screen and (min-width: 413px)  {
+      h1.confidentialité 
+    {
+  color:#E2A231 ;
+  font-size: 40px;
+  padding-top: 4em;
+  padding-bottom: 4em; ;
+    }
+    .sub-confidentialité{
+    font-size: 40px;
+    width: 80%;
+    padding-bottom: 4em;
+
+}
+.container-of-the-boxs{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:70px;
+    padding-bottom: 200px;
+    margin: auto;
+
+}
+.confirmation{
+    display: flex;
+    justify-content: space-around;
+}
+
+.confirmation .img{
+    width: 45%;
+}
+
+.lengagement-de-jouhari{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    .jouhari-engagement{
+        display: flex;
+        justify-content: space-around;
+    }
+.box-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end:1;
+    grid-row-start:2;
+   
+
+}
+.box-2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-end:1;
+    grid-row-start:2;
+
+}
+.box-3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-end:1;
+    grid-row-start:2;
+   
+}
+.box-4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-end:2;
+    grid-row-start:3;
+}
+.box-5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-end:2;
+    grid-row-start:3;
+  
+}
+.box-6{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-end:2;
+    grid-row-start:3;
+   
+}
+.box-1 , .box-2 , .box-3 , .box-4 , .box-5 , .box-6{
+    width: 100%;
+    height: 100%; 
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    box-shadow: none;
+    border: #E2A231 solid 5px;
+
+}
+.icons,.titre-de-box,.p-de-box{
+    padding: 20px;
+    font-size: 20px;
+}
+  img.screen-shots{
+    width: 100%;
+    border: #E2A231 solid 2px;
+    border-radius: 20px;
+    box-shadow: 0 4px #E2A231;
+}
+.lien-pdf{
+    font-size: 20px;
+}
+.lien-btn{
+    margin-top: 50px;
+    font-size: 40px;
+}
+ .container-de-box-8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+ }
+ p.text-de-box{
+    font-size: 20px;
+    height: 100px;
+ }
+ p.box-7{
+    font-size: 38px;
+    height: 50%;
+    width: 60%;
+ }
+ .seperator {
+        gap: 1rem;
+    }
+
+    .seperator .line-1,
+    .seperator .line-2,
+    .seperator .line-3 {
+        height: .5rem;
+    }
+    img.twitter{
+    width: 70%;
+ }
+  .sub3-confidentialité{
+        font-size: 40px;
+  }
+  }
+ 
