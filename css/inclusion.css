@@ -1,5 +1,29 @@
 .sub-title {
     text-align: center;
+    color:var(--sub-title-color)
+}
+
+img {
+  max-width: 100%;
+}
+li {
+    list-style: none;
+    margin-right: 20px;
+}
+h1{
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+p{
+    font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+    color: #ccc;
+}
+h2{
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    text-align: center;
+}
+h3{
+    font-size: clamp(1.1rem, 2.8vw, 1.8rem);
+    text-align: center;
 }
 
 /* utilities------------ */
@@ -22,7 +46,8 @@
 }
 .section-title{
     text-align: center;
-    color: var(--primary-color);
+   
+    color: var(--title-color);
 }
 
 /* inclusion section------------ */
@@ -39,10 +64,10 @@
 .stats-card{
     /* max-width: 370px; */
     justify-self: center;
-    border: 2px solid var(--dark-color);
+    border: 2px solid var(--title-color);
     padding: 22px;
     text-align: center;
-    background-color: var(--secondary-color);
+    background-color: var(--card-bg-color);
     border-radius: 30px;
     box-shadow: 0 10px 0 var(--primary-color);
 }
@@ -70,7 +95,7 @@
     top: 0;
     z-index:44 ;
     left: -3px;
-    background-color: var(--primary-color);
+    background-color: var(--line-color);
 }
 
 /* testimonials-section---------- */
@@ -85,7 +110,7 @@
     padding: 12px;
     border-radius: 22px;
     height: auto;
-    border: 3px solid var(--primary-color);
+    border: 3px solid var(--title-color);
 }
 .testimonials-card h4{
     margin: 12px 0;
@@ -98,16 +123,17 @@
 }
 .testimonials-card  p:last-child{
     position: relative;
+    margin: 22px 0;
 }
 .testimonials-card  p:last-child::after{
     content: '';
     width: 100%;
     height: 2px;
-    background-color: var(--primary-color);
+    background-color: var(--title-color);
     margin: 20px auto;
     position: absolute;
-    top: -33px;
-    margin: 22px 0;
+    top: -45px;
+    margin: 32px 0;
     left: 0;
     border-radius: 23px;
 }
@@ -115,11 +141,11 @@
 
 
 
-@media (max-width:678px) {
+@media (max-width:412px) {
  .hero-section{
     padding: 20px;
 }  
-.result {
+.result,.testimonials{
     padding: 20px;
 } 
 }
