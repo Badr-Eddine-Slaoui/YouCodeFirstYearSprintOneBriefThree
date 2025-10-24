@@ -145,7 +145,7 @@ header nav .nav-button a{
 }
 
 footer {
-    height: 30vh;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,7 +154,7 @@ footer {
 }
 
 footer .row{
-    height: 70%;
+    height: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,7 +257,7 @@ footer .footer-content .partners .partner-container img{
 
 footer .contact-form{
     width: 30%;
-    height: 95%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
