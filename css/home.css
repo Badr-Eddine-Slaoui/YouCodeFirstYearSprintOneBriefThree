@@ -322,7 +322,7 @@ section{
 .newsletter .newsletter-btn{
     position: absolute;
     height: 100%;
-    top: 0;
+    top: 4px;
     right: 0;
     padding: 4px 8px;
     background-color: var(--title-color);
@@ -599,6 +599,7 @@ section{
     }
 
     .newsletter .newsletter-form .newsletter-btn{
+        top: 0;
         padding: 1rem 1.5rem;
         border-radius: 16px;
         font-size: 1.5rem;
