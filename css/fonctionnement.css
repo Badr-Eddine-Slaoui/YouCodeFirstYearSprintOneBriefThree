@@ -1,0 +1,460 @@
+section {
+  position: relative;
+  top: 4rem;
+}
+
+.visuel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.visuel-descr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.visuel-descr h1 {
+  font-size: 1.5em;
+  color: var(--title-color);
+  font-family: var(--font-family);
+  font-weight: 700;
+}
+.visuel-descr h4 {
+  font-size: 0.7rem;
+  font-family: var(--font-family);
+  font-weight: 100;
+}
+
+.visuel-box {
+  height: 20rem;
+  width: 15rem;
+  background-color: var(--card-bg-color);
+  border: 1px solid #c39035;
+  border-radius: 5px;
+  box-shadow: 0 8px 8px #00000040, 0 8px 8px #00000040;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+.visuel-box-title h1{
+  color: var(--title-color);
+  font-family: var(--font-family);
+  font-size: 2rem;
+}
+
+.visuel-cubes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  top: 1.5rem;
+}
+.visuel-cube-up {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.visuel-cube-down {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.visuel-box p{
+  text-align: center;
+  font-weight: 200;
+}
+
+.visuel-box-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visuel-box-title h5{
+  font-family: var(--font-family);
+  font-weight: 100;
+  font-size: 1rem;
+  color: #87888f;
+}
+
+
+@media screen and (min-width: 413px) {
+  section {
+    position: relative;
+    top: 7rem;
+  }
+
+  .visuel-cube-up {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .visuel-cube-down {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+
+  .visuel-descr h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+  }
+  .visuel-descr h4 {
+    font-size: 0.9rem;
+    font-weight: 100;
+  }
+  .visuel-box {
+    height: 30rem;
+    width: 25rem;
+    border-radius: 25px;
+    
+  }
+  .visuel-box p{
+    font-size: x-large;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .visuel-cubes {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+    top: 3rem;
+  }
+}
+
+.utilise {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.utilise-descr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.utilise-descr h1 {
+  font-size: 1.5em;
+  color: var(--title-color);
+  font-family: var(--font-family);
+  font-weight: 700;
+}
+
+.utilise-descr h4 {
+  font-size: 0.7rem;
+  font-family: var(--font-family);
+  font-weight: 100;
+}
+
+.utilise-box-descr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.utilise-box-descr h5{
+  font-family: var(--font-family);
+  font-weight: 100;
+  font-size: 1rem;
+  color: #87888f;
+}
+
+.utilise-box-descr h1{
+  font-size: 1.2rem;
+  color: var(--title-color);
+  font-family: var(--font-family);
+}
+.utilise-box p{
+  text-align: center;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 413px) {
+  .utilise {
+    margin-top: 14rem;
+  }
+  .utilise-descr h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+  }
+  .utilise-descr h4 {
+    font-size: 0.9rem;
+    font-weight: 100;
+  }
+  .utilise-box-descr h1{ 
+  font-size: 2rem;
+}
+.utilise-box p{
+    font-size: x-large;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.utilise-cubes {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.utilise-box {
+  height: 20rem;
+  width: 15rem;
+  background-color: var(--card-bg-color);
+  border: 1px solid #c39035;
+  border-radius: 5px;
+  box-shadow: 0 8px 8px #00000040, 0 8px 8px #00000040;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.utilise-cube-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.utilise-cube-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+
+@media screen and (min-width: 413px) {
+
+    .utilise-box {
+    height: 30rem;
+    width: 25rem;
+    border-radius: 25px;
+  }
+  .utilise-cubes{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    gap: 17rem;
+  }
+  .utilise-cube-left{
+    display: flex;
+    gap: 10rem;
+  }
+  .utilise-cube-right{
+    display: flex;
+    gap: 10rem;
+    
+  }
+}
+
+.vs{
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vs-descr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vs-descr h1 {
+  font-size: 1.5em;
+  color: var(--title-color);
+  font-family: var(--font-family);
+  font-weight: 700;
+}
+
+.vs-descr h4 {
+  font-size: 0.7rem;
+  font-family: var(--font-family);
+  font-weight: 100;
+}
+
+.vs-up{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vs-up-descr{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vs-up-descr h1{
+  font-size: 1.2em;
+  color: var(--title-color);
+  font-family: var(--font-family);
+  font-weight: 700;
+}
+
+.vs-up-descr h4{
+   font-size: 0.7rem;
+  font-family: var(--font-family);
+  font-weight: 100;
+}
+.vs-box {
+  height: 20rem;
+  width: 15rem;
+  background-color: var(--card-bg-color);
+  border: 1px solid #c39035;
+  border-radius: 5px;
+  box-shadow: 0 8px 8px #00000040, 0 8px 8px #00000040;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vs-box p{
+  font-size: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.vs-box h3{
+  font-size: 0.8rem;
+  color: var(--title-color);
+  padding-left: 0.5rem;
+}
+
+.vs-box ul{
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.vs-box li{
+  font-size: 0.7rem;
+  list-style: none;
+}
+
+
+@media screen and (min-width:413px) {
+  
+  .vs {
+    margin-top: 14rem;
+  }
+  .vs-descr h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+  }
+  .vs-descr h4 {
+    font-size: 0.9rem;
+    font-weight: 100;
+  }
+  .vs-up-descr h1{
+  font-size: 3em;
+  color: var(--title-color);
+  font-family: var(--font-family);
+  font-weight: 700;
+}
+
+.vs-up-descr h4{
+   font-size: 1rem;
+  font-family: var(--font-family);
+  font-weight: 100;
+}
+   .vs-box {
+    height: 30rem;
+    width: 25rem;
+    border-radius: 25px;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .vs-box p{
+  font-size:1.2rem;
+}
+
+.vs-box h3{
+  font-size: 1.2rem;
+  color: var(--title-color);
+  padding-left: 1rem;
+}
+
+.vs-box ul{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.vs-box li{
+  font-size: 1rem;
+}
+
+  .vs-up{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+  .vs-up-descr img{
+    width: 30rem;
+  }
+}
+
+.vs-down{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vs-down-descr{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vs-down-descr h1{
+  font-size: 1.2em;
+  color: var(--title-color);
+  font-family: var(--font-family);
+  font-weight: 700;
+}
+
+.vs-down-descr h4{
+   font-size: 0.7rem;
+  font-family: var(--font-family);
+  font-weight: 100;
+}
+
+@media screen and (min-width:413px) {
+   .vs-down-descr h1{
+  font-size: 3em;
+  color: var(--title-color);
+  font-family: var(--font-family);
+  font-weight: 700;
+}
+
+.vs-down-descr h4{
+   font-size: 1rem;
+  font-family: var(--font-family);
+  font-weight: 100;
+}
+ .vs-down{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5rem;
+  }
+  .vs-down-descr img{
+    width: 30rem;
+  }
+}
