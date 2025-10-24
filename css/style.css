@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root{
     --bg-color: #353846;
     --bg-secondary-color: #858B95;
@@ -97,7 +99,7 @@ header nav .nav-button{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5px 8px;
+    padding: 5px 5px;
     background-color: var(--bg-secondary-color);
     border: 0.5px solid var(--title-color);
     border-radius: 4px;
@@ -113,8 +115,37 @@ header nav .nav-button a{
     text-shadow: 0 0 10px #000000bf;
 }
 
+.seperator {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.seperator .line-1,
+.seperator .line-2,
+.seperator .line-3{
+    height: 2px;
+    border-radius: 50px;
+    background-color: var(--title-color);
+}
+
+.seperator .line-1{
+    width: 33%;
+}
+
+.seperator .line-2{
+    width: 100%;
+}
+
+.seperator .line-3{
+    width: 33%;
+    margin-left: auto;
+}
+
 footer {
-    height: 30vh;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,7 +154,7 @@ footer {
 }
 
 footer .row{
-    height: 70%;
+    height: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,7 +257,7 @@ footer .footer-content .partners .partner-container img{
 
 footer .contact-form{
     width: 30%;
-    height: 95%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -347,6 +378,16 @@ footer .copyright{
 
     header nav .nav-button a{
         font-size: 20px;
+    }
+
+    .seperator {
+        gap: 1rem;
+    }
+
+    .seperator .line-1,
+    .seperator .line-2,
+    .seperator .line-3 {
+        height: .5rem;
     }
 
     footer {

@@ -6,36 +6,38 @@ main{
 section{
     display: flex;
     width: 100%;
-    height: 30vh;
+    min-height: 30vh;
 }
 
 .hero {
+    flex-direction: column;
+    min-height: 55vh;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 24px;
 }
 
 .hero .hero-text {
-    width: 40%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .hero .hero-text .hero-title {
-    font-size: 16px;
+    font-size: 30px;
     line-height: 1.5;
     color: var(--title-color);
     font-weight: bold;
 }
 
 .hero .hero-text .hero-description {
-    font-size: 8px;
+    font-size: 12px;
     line-height: 1.1;
 }
 
 .hero .hero-text .hero-btn{
-    width: 50%;
+    width: 45%;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -43,7 +45,7 @@ section{
     padding: 5px 8px;
     background-color: var(--bg-secondary-color);
     color: var(--primary-color);
-    font-size: 8px;
+    font-size: 16px;
     font-weight: bold;
     border: 0.5px solid var(--title-color);
     border-radius: 4px;
@@ -65,43 +67,16 @@ section{
     box-shadow: 0 4px 4px #00000040, 0 4px 4px #00000040;
 }
 
-.seperator {
-    width: 50%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.seperator .line-1,
-.seperator .line-2,
-.seperator .line-3{
-    height: 2px;
-    border-radius: 50px;
-    background-color: var(--title-color);
-}
-
-.seperator .line-1{
-    width: 33%;
-}
-
-.seperator .line-2{
-    width: 100%;
-}
-
-.seperator .line-3{
-    width: 33%;
-    margin-left: auto;
-}
-
 .definition{
+    flex-direction: column;
+    min-height: 45vh;
     justify-content: center;
     align-items: center;
     gap: 24px;
 }
 
 .definition .definition-img{
-    width: 35%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,26 +87,26 @@ section{
 }
 
 .definition .definition-text{
-    width: 50%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
 .definition .definition-text .definition-title{
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bold;
     color: var(--title-color);
     text-transform: uppercase;
 }
 
 .definition .definition-text .definition-description{
-    font-size: 8px;
+    font-size: 12px;
     line-height: 1.2;
 }
 
 .advantage{
-    height: 50vh;
+    min-height: 60vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -142,119 +117,86 @@ section{
     display: flex;
     flex-direction: column;
     gap: 4px;
-    width: 70%;
+    width: 80%;
     text-align: center;
 }
 
 .advantage .advantage-title{
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bold;
     color: var(--title-color);
     text-transform: uppercase;
 }
 
 .advantage .advantage-description{
-    font-size: 8px;
+    font-size: 12px;
     line-height: 1.2;
 }
 
 .advantage .advantage-graph{
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-}
-.advantage .advantage-graph .left-side,
-.advantage .advantage-graph .right-side{
-    width: 45%;
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 2fr 1fr;
+    row-gap: 20px;
 }
 
 .advantage .advantage-graph .center{
-    position: relative;
-    width: 2px;
-    height: 100%;
-    background-color: var(--title-color);
+    display: none;
 }
 
-.advantage .advantage-graph .center .horizontal-line{
-    width: 100%;
-    height: 100%;
-    background-color: var(--title-color);
-}
-
-.advantage .advantage-graph .center .top-img{
-    position: absolute;
-    top: -12px;
-    left: -10px;
-    width: 20px;
-    height: 20px;
-}
-
-.advantage .advantage-graph .center .bottom-img{
-    position: absolute;
-    bottom: -12px;
-    left: -10px;
-    width: 20px;
-    height: 20px;
-}
-
-.advantage .advantage-graph .right-side{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.advantage .advantage-graph .left-side{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
 }
 
 .advantage .advantage-graph .row{
     width: 100%;
-    height: 40%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .advantage .advantage-graph .left-side .row{
-    height: 50%;
+    height: 100%;
 }
 
 .advantage .advantage-graph .row .card{
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 4px;
-    padding: 0 8px;
+    padding: 0 .6rem;
     background-color: var(--card-bg-color);
-    border: 0.5px solid var(--title-color);
-    border-radius: 12px;
+    border: 2px solid var(--title-color);
+    border-radius: 24px;
+    gap: 8px;
 }
 
 .advantage .advantage-graph .left-side .row .card{
-    height: 50%;
+    height: 100%;
 }
 
 .advantage .advantage-graph .row .card .card-title{
-    font-size: 8px;
+    font-size: 16px;
     font-weight: bold;
     color: var(--sub-title-color);
     text-transform: capitalize;
 }
 
 .advantage .advantage-graph .row .card .card-description{
-    font-size: 6px;
+    font-size: 12px;
     line-height: 1.1;
 }
 
 .advantage .advantage-graph .row .line-container{
-    width: 40%;
-    height: 2px;
-}
-
-.advantage .advantage-graph .row .line-container .vertical-line{
-    width: 100%;
-    height: 2px;
-    background-color: var(--title-color);
+    display: none;
 }
 
 .faq {
@@ -329,7 +271,7 @@ section{
 }
 
 .newsletter{
-    height: 20vh;
+    min-height: 20vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -380,7 +322,7 @@ section{
 .newsletter .newsletter-btn{
     position: absolute;
     height: 100%;
-    top: 0;
+    top: 4px;
     right: 0;
     padding: 4px 8px;
     background-color: var(--title-color);
@@ -400,10 +342,12 @@ section{
     }
 
     section {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .hero {
+        flex-direction: row;
+        min-height: 100vh;
         gap: 4rem;
     }
 
@@ -431,18 +375,9 @@ section{
         width: 30%;
     }
 
-    .seperator {
-        gap: 1rem;
-    }
-
-    .seperator .line-1,
-    .seperator .line-2,
-    .seperator .line-3 {
-        height: .5rem;
-    }
-
     .definition {
-        height: 80vh;
+        flex-direction: row;
+        min-height: 80vh;
         gap: 4rem;
     }
 
@@ -486,11 +421,27 @@ section{
     .advantage .advantage-graph{
         width: 60%;
         height: 90vh;
+        display: flex;
+        justify-content: center;
+    }
+    .advantage .advantage-graph .left-side,
+    .advantage .advantage-graph .right-side{
+        display: block;
+        width: 45%;
     }
 
     .advantage .advantage-graph .center{
+        display: block;
+        position: relative;
         width: 10px;
         height: 100%;
+        background-color: var(--title-color);
+    }
+
+    .advantage .advantage-graph .center .horizontal-line{
+        width: 100%;
+        height: 100%;
+        background-color: var(--title-color);
     }
 
     .advantage .advantage-graph .center .top-img{
@@ -509,16 +460,35 @@ section{
         height: 6vh;
     }
 
+    .advantage .advantage-graph .right-side{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .advantage .advantage-graph .row{
         width: 100%;
         height: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .advantage .advantage-graph .left-side .row{
+        height: 50%;
     }
 
     .advantage .advantage-graph .row .card{
         width: 80%;
         height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         gap: 1rem;
         padding: 0 .6rem;
+        background-color: var(--card-bg-color);
         border: 2px solid var(--title-color);
         border-radius: 24px;
     }
@@ -529,6 +499,9 @@ section{
 
     .advantage .advantage-graph .row .card .card-title{
         font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--sub-title-color);
+        text-transform: capitalize;
     }
 
     .advantage .advantage-graph .row .card .card-description{
@@ -537,12 +510,15 @@ section{
     }
 
     .advantage .advantage-graph .row .line-container{
+        display: block;
         width: 45%;
         height: 10px;
     }
 
     .advantage .advantage-graph .row .line-container .vertical-line{
+        width: 100%;
         height: 100%;
+        background-color: var(--title-color);
     }
 
     .faq {
@@ -591,7 +567,7 @@ section{
     }
 
     .newsletter {
-        height: 70vh;
+        min-height: 70vh;
         gap: 4rem;
     }
 
@@ -623,6 +599,7 @@ section{
     }
 
     .newsletter .newsletter-form .newsletter-btn{
+        top: 0;
         padding: 1rem 1.5rem;
         border-radius: 16px;
         font-size: 1.5rem;
