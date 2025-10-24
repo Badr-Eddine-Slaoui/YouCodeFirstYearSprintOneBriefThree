@@ -129,6 +129,12 @@ div.box-8{
     border-radius: 20px;
     margin: 20px;
  }
+ .p-de-box{
+    font-size: 13px;
+ }
+ p.text-de-box{
+    font-size: 10px;
+ }
   @media only screen and (min-width: 413px)  {
       h1.confidentialité 
     {
@@ -275,5 +281,11 @@ div.box-8{
   .sub3-confidentialité{
         font-size: 40px;
   }
+   p.text-de-box{
+    font-size: 15px;
+ }
+ .box-7{
+    padding: 40px;
+ }
   }
  
