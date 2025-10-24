@@ -164,6 +164,9 @@ select#mois option, select#année option, select#theme option {
     text-align: center;
     font-weight: bold;
 }
+.video__txt br{
+  display: none;
+}
 .video__item  iframe {
   border-radius: 20px;
   width: 100%;
@@ -347,6 +350,9 @@ select#mois option, select#année option, select#theme option {
 .video__txt{
     text-align: center;
     font-weight: bold;
+}
+.video__txt br{
+  display: block;
 }
 .video__item{
     display:flex;
