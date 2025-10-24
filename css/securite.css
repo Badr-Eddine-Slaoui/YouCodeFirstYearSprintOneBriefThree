@@ -129,6 +129,12 @@ div.box-8{
     border-radius: 20px;
     margin: 20px;
  }
+ .p-de-box{
+    font-size: 13px;
+ }
+ p.text-de-box{
+    font-size: 10px;
+ }
   @media only screen and (min-width: 413px)  {
       h1.confidentialité 
     {
@@ -229,8 +235,8 @@ div.box-8{
 
 }
 .icons,.titre-de-box,.p-de-box{
-    padding: 20px;
-    font-size: 20px;
+    padding: 30px;
+    font-size: 30px;
 }
   img.screen-shots{
     width: 100%;
@@ -256,7 +262,7 @@ div.box-8{
     height: 100px;
  }
  p.box-7{
-    font-size: 38px;
+    font-size: 32px;
     height: 50%;
     width: 60%;
  }
@@ -275,5 +281,11 @@ div.box-8{
   .sub3-confidentialité{
         font-size: 40px;
   }
+   p.text-de-box{
+    font-size: 15px;
+ }
+ .box-7{
+    padding: 40px;
+ }
   }
  
