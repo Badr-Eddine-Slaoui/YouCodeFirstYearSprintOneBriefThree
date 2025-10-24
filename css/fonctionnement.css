@@ -1,6 +1,6 @@
 section {
-  position: relative;
-  top: 4rem;
+  padding-bottom: 2rem;
+    padding-top: 3rem;
 }
 
 .visuel{
@@ -51,8 +51,6 @@ section {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  position: relative;
-  top: 1.5rem;
 }
 .visuel-cube-up {
   display: flex;
@@ -86,8 +84,8 @@ section {
 
 @media screen and (min-width: 413px) {
   section {
-    position: relative;
-    top: 7rem;
+    padding-bottom: 4rem;
+    padding-top: 6rem;
   }
 
   .visuel-cube-up {
@@ -126,13 +124,10 @@ section {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    position: relative;
-    top: 3rem;
   }
 }
 
 .utilise {
-  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -180,9 +175,6 @@ section {
 }
 
 @media screen and (min-width: 413px) {
-  .utilise {
-    margin-top: 14rem;
-  }
   .utilise-descr h1 {
     font-size: 3.5em;
     font-weight: 700;
@@ -260,7 +252,6 @@ section {
 }
 
 .vs{
-  margin-top: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,9 +339,6 @@ section {
 
 @media screen and (min-width:413px) {
   
-  .vs {
-    margin-top: 14rem;
-  }
   .vs-descr h1 {
     font-size: 3.5em;
     font-weight: 700;
